@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head><italic> <b><center>PVP COLLEGE </center></b></italic>
+<title>college wepsite</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header marquee {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+/* Style the main section */
+.main-section {
+    background: #eb70da;
+    padding: 20px;
+}
+
+/* Style the event headlines */
+.event h2, .event h3, .event h4 {
+    text-align: center;
+    background-color: #680753;
+    color: white;
+    padding: 10px;
+}
+
+/* Style the event content */
+.event ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style the images in the event content */
+.event ul li img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Center the registration form */
+#registrationForm {
+    text-align: center;
+}
+
+/* Style the social media section */
+.social-media {
+    text-align: center;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Footer styles */
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+</style>
+</head>
+<body>
+    <script>
+    function validateForm() {
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+    
+        var errorMessage = "";
+    
+        if (username === "") {
+            errorMessage += "Username is required.<br>";
+        }
+    
+        if (email === "") {
+            errorMessage += "Email is required.<br>";
+        }
+    
+        if (password === "") {
+            errorMessage += "Password is required.<br>";
+        }
+    
+        if (password !== confirmPassword) {
+            errorMessage += "Passwords do not match.<br>";
+        }
+    
+        if (errorMessage !== "") {
+            document.getElementById("error-message").innerHTML = errorMessage;
+            return false;
+        }
+    
+        return true;
+    }
+    </script>
+    
+<div class="header">
+<div class="container">
+<b>My college : </b>
+<marquee>
+my college :Intelligence plus curisoity-that is the root of true education
+</marquee>
+</div>
+<div>
+    <div class="container">
+        <img src="images/logo1.jpeg" class="logo">
+
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">about us</a>
+            <a href="#">events</a>
+            <a href="#">images</a>
+            <a href="#">notice board</a>
+            <a href="#">contact us</a>
+        </nav>
+    </div>
+    <div clss="slider">
+        <img src="images/logo.jpeg">
+    </div>
+    <div class="main-section"style="background:#f0f3fa;">
+        <div class="container">
+            <div class="event">
+                <h2 class="heading">campus news</h2>
+    </div>
+    <marquee direction="up" scrollamount="7" style="height:200px;">
+    <ul>
+        <li><i>01-08-2023 :</i>In most of the world, a college may be a high school or secondary
+             school, a college of further education, a training institution that awards trade 
+             qualifications, a higher-education provider that does not have university status
+              (often without its own degree-awarding powers), or a constituent part of a university.
+               In the United States, a college may offer undergraduate programs – either as an
+                independent institution or as the undergraduate program of a university – or it may be a
+                 residential college of a university or a community college, referring to (primarily public)
+                  higher education institutions that aim to provide affordable and accessible education, usually
+                   limited to two-year associate degrees.[1] The word is generally also used as a synonym for a
+                    university in the US.[2] Colleges in
+             countries such as France, Belgium, and Switzerland provide secondary education.</li>
+             <img src="images/campus.jpeg" > 
+        </ul>
+    </marquee>
+</div>
+</div>
+<div class="event">
+    <h2> Fecilities</h2>
+    <div>
+        <ul>
+            <li><span class="event-date"> <br>
+            </span>lab</li>
+            <img src="images/lab.jpeg">
+            <li><span class="event-date"> <br>
+                </span>hostel</li>
+                <img src="images/hostel.jpg">
+                <li><span class="event-date"> <br>
+                    </span>sports</li>
+                    <img src="images/sports.jpg">
+                    <li><span class="event-date"> <br>
+                        </span>library</li>
+                        <img src="images/library.jpg">
+                        <li><span class="event-date"><br>
+                            </span>canteen</li>
+                            <img src="images/canteen.jpg">
+        </ul>
+    </div>
+</div>
+<div class="event">
+    <h3> notice board</h3>
+    <ul>
+        <li>Residents’ Welfare Association</li>
+           <li> Notice</li>
+           <li>10 Jan 2024</li>
+           <li>Holi Fiesta</li>
+           <li>The Residents’ Welfare Association is organising a Holi bash in the colony
+            as per the following details:</li>
+            <li>Date : 17 February 2024</li>
+            <li>Time : 9 am to 5 pm</li>
+            <li>Venue : Green Park Club</li>
+            <li>The residents are requested to come along with their families and friends
+            and add colour to the rejoicings.</li>
+            <li>vinu</li>
+            <li>vinushi</li>
+            <li>President, RWA</li>
+        
+    </ul>
+    </div>
+    <h4><center>Registration Form</center></h4>
+</head>
+<body>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <p id="error-message" style="color: red;"></p>
+
+    <script src="vini.js"></script>
+    </body>
+    <div class="social-media">
+        <h5>Follow us</h5>
+        <ul>
+            <li><a href="#"><img src="images/facebook.jpg"width="2%"alt="facebook">facebook</a></li>
+            <li><a href="#"><img src="images/insta.jpg"width="2%"alt="intagram">instagram</a></li>
+            <li><a href="#"><img src="images/linkedin.jpg"width="2%"alt="linkedin">linkedin</a></li>
+            <li><a href="#"><img src="images/youtube.png"width="2%"alt="youtube">youtube</a></li>
+        </ul>
+        </ul>
+        </ul>
+
+    </div>
+    <p>&copy;2023|designed by priya .S</p>
+</body>
+</html>
